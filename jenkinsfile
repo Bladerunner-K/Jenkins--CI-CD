@@ -13,7 +13,6 @@ pipeline {
                 echo "Building.."
                 sh '''
                 echo "doing suttin"
-                sudo apt-get install python3
                 '''
             }
         }
@@ -22,7 +21,6 @@ pipeline {
                 echo "Testing.."
                 sh '''
                 python3 hello.py
-                python3 hello.py --operator=flash
                 '''
             }
         }
