@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo "Building.."
                 sh '''
-                echo "doing build stuff.."
                 pip install -r requirements.txt
                 '''
             }
@@ -21,10 +20,9 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                echo "doing test stuff.."
-                python3 hello.py
-                python3 hello.py --name=khalid
-                python3 hello.py --operator=flash
+                python hello.py
+                python hello.py --name=khalid
+                python hello.py --operator=flash
                 '''
             }
         }
