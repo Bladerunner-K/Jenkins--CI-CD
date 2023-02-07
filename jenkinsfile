@@ -20,9 +20,9 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python hello.py
-                python hello.py --name=khalid
-                python hello.py --operator=flash
+                python3 hello.py
+                python3 hello.py --name=khalid
+                python3 hello.py --operator=flash
                 '''
             }
         }
