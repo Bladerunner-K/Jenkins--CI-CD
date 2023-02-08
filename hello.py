@@ -1,3 +1,11 @@
+import fire
+  
+def greeting(name):
+    return "Hello " + name
+  
+fire.Fire(greeting("World!"))
+
+
 operator = ""
 
 
