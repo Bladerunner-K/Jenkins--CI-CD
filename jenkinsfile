@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                python3 --version
+                python --version
                 '''
             }
         }
